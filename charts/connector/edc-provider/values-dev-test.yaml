@@ -118,3 +118,8 @@ irs-edc-provider:
         edc.vault.hashicorp.url=https://vault.demo.catena-x.net
         edc.vault.hashicorp.token=<path:traceability-irs/data/dev/controlplane#vaultToken>
         edc.vault.hashicorp.api.secret.path=/v1/traceability-irs
+        edc.negotiation.state-machine.iteration-wait-millis = 500
+        edc.negotiation.consumer.state-machine.batch-size = 20
+        edc.negotiation.provider.state-machine.batch-size = 20
+        edc.transfer.state-machine.iteration-wait-millis = 500
+        edc.transfer.state-machine.batch-size = 20
