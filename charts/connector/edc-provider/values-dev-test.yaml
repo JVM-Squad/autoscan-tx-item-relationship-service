@@ -36,6 +36,9 @@ irs-edc-provider:
           clusterIssuer: ""
 
     edc:
+      receiver:
+        callback:
+          url: ""
       postgresql:
         password: <path:traceability-irs/data/dev/controlplane#databasepassword>
       transfer:
