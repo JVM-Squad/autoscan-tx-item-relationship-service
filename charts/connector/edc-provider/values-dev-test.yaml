@@ -36,9 +36,6 @@ irs-edc-provider:
           clusterIssuer: ""
 
     edc:
-      receiver:
-        callback:
-          url: http://{{ include "edc-controlplane.fullname" . }}:8080/api/service/pull
       postgresql:
         password: <path:traceability-irs/data/dev/controlplane#databasepassword>
       transfer:
